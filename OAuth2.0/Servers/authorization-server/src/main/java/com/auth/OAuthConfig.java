@@ -62,7 +62,7 @@ public class OAuthConfig extends AuthorizationServerConfigurerAdapter {
                 .authorizedGrantTypes("authorization_code")
                 .scopes("public_read", "user_read", "user_write")
                 .redirectUris("http://localhost:9999/oauth/access/?key=value")
-                .secret("mAac87WQq")
+                .secret("DeousQq")
                 .accessTokenValiditySeconds(4434000);
     }
 
