@@ -46,7 +46,7 @@ public class AppRestController {
     @RequestMapping(value = "/login-wowelephant", method=RequestMethod.GET)
     public RedirectView processForm1() {
         RedirectView redirectView = new RedirectView();
-        redirectView.setUrl("http://localhost:8081/auth/oauth/authorize?response_type=code&client_id=1000123456&redirect_url=http://localhost:9999/oauth/access?key=value&scope=user_read%20user_write");
+        redirectView.setUrl("http://localhost:8081/auth/oauth/authorize?response_type=code&client_id=2333453222&redirect_url=http://localhost:9999/oauth/access?key=value&scope=user_read%20user_write");
         return redirectView;
     }
     @RequestMapping(value = "/login",params={"user_login"}, method=RequestMethod.POST)
@@ -78,7 +78,7 @@ public class AppRestController {
 
             //Set Headers
             con.setRequestProperty("content-type", "application/x-www-form-urlencoded");
-            con.setRequestProperty("Authorization", "Basic MTAwMDEyMzQ1NjptQWFjODdXUXE=");
+            con.setRequestProperty("Authorization", "Basic MjMzMzQ1MzIyMjpEZW91c1Fx=");
 
             //Set Body
             con.setDoOutput(true);
